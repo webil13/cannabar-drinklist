@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+/* main container */
+
+.drinklist-container {
+  background-image: url('./geschichte4.jpg');
+  background-size: cover;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* carousel styles */
+
+.carousel-indicators {
+  position: absolute;
+  top: 0;
+  color: black;
+  font-family: 'Domine', serif;
+  box-sizing: border-box;
+}
+
+.carousel-indicators li {
+  text-indent: 0;
+  padding: 1px 10px;
+  margin: .2em .5em;
+  width: auto;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.carousel-indicators li:hover, .carousel-indicators li.active {
+  color: #3aaf1f;
+  font-weight: bold;
+  border-bottom: 3px solid #3aaf1f;
+}
+
+.carousel-item {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .8);
+}
+
+/* images */
+
+.logo {
+  position: absolute;
+  right: 1em;
+  top: 3.5em;
+  width: 120px;
+  height: 120px;
+}
+
+.coffee-menu-img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.5em;
+  opacity: .9;
+}
+
+/* table styles */
+
+.drinks-table {
+  width: 70%;
+  margin-top: 3.5em;
+  margin-left: 20px;
+}
+
+td:nth-child(1) {
+  width: 50%;
+}
+
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text {
+  font-weight: 300;
+}
+
+.italic-text {
+  font-style: italic;
+}
+
+/* media queries */
+
+@media(max-width: 430px) {
+  .carousel-indicators {
+    font-size: 12px;
+    font-weight: semibold;
+  }
+}
