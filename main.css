@@ -57,6 +57,44 @@
   opacity: .9;
 }
 
+.drinks-img {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 1em;
+  width: 30vw;
+  height: auto;
+}
+
+.baenz-logo {
+  position: absolute;
+  top: 7.5em;
+  right: 22em;
+  width: 7vw;
+  height: auto;
+}
+
+.sirupier-logo {
+  position: absolute;
+  top: 12em;
+  right: 10em;
+  width: 7vw;
+  height: auto;
+  background: white;
+  border-radius: 5%;
+  padding: 10px;
+}
+
+.sms-logo {
+  position: absolute;
+  top: 21.5em;
+  right: 18em;
+  width: 7vw;
+  height: auto;
+  background: white;
+  border-radius: 5%;
+  padding: 10px;
+}
+
 /* table styles */
 
 .drinks-table {
