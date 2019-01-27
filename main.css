@@ -2,22 +2,33 @@
 @import url('https://fonts.googleapis.com/css?family=Domine');
 /* main container */
 
+body {
+  overflow: scroll;
+}
+
+.btn:focus, .navbar-toggler:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 .drinklist-container {
-  background-image: url('./geschichte4.jpg');
+  background-image: url('./img/geschichte4.jpg');
   background-size: cover;
   color: white;
   font-family: 'Source Sans Pro', sans-serif;
-  height: 100vh;
+  height: 100%;
 }
 
 /* carousel styles */
 
 .carousel-indicators {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  bottom: 0;
   color: black;
   font-family: 'Domine', serif;
   box-sizing: border-box;
+  height: auto;
 }
 
 .carousel-indicators li {
@@ -25,9 +36,10 @@
   padding: 1px 10px;
   margin: .2em .5em;
   width: auto;
-  height: 1.5rem;
+  height: auto;
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .carousel-indicators li:hover, .carousel-indicators li.active {
@@ -37,8 +49,17 @@
 }
 
 .carousel-item {
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, .8);
+}
+
+/* nav styles */
+
+li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
+  color: #3aaf1f!important;
+  outline: none;
+  cursor: pointer;
 }
 
 /* images */
@@ -58,50 +79,13 @@
   opacity: .9;
 }
 
-.drinks-img {
-  position: absolute;
-  bottom: 3.5rem;
-  right: 1em;
-  width: 30vw;
-  height: auto;
-}
-
-.baenz-logo {
-  position: absolute;
-  top: 7.5em;
-  right: 22em;
-  width: 7vw;
-  height: auto;
-}
-
-.sirupier-logo {
-  position: absolute;
-  top: 12em;
-  right: 10em;
-  width: 7vw;
-  height: auto;
-  background: white;
-  border-radius: 5%;
-  padding: 10px;
-}
-
-.sms-logo {
-  position: absolute;
-  top: 21.5em;
-  right: 18em;
-  width: 7vw;
-  height: auto;
-  background: white;
-  border-radius: 5%;
-  padding: 10px;
-}
-
 /* table styles */
 
 .drinks-table {
-  width: 70%;
+  width: 85%;
   margin-top: 3.5em;
   margin-left: 20px;
+  margin-bottom: 2em;
 }
 
 td:nth-child(1) {
@@ -116,11 +100,27 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text 
   font-style: italic;
 }
 
+.table-head {
+  font-weight: bold;
+  padding-left: .5em;
+}
+
 /* media queries */
 
-@media(max-width: 430px) {
+@media(max-width: 450px) {
   .carousel-indicators {
-    font-size: 12px;
+    font-size: 6px;
+    font-weight: 200;
+  }
+  .carousel-indicators li {
+    margin: 1px;
+    padding: 3px
+  }
+}
+
+@media(max-width: 650px) {
+  .carousel-indicators {
+    font-size: 11px;
     font-weight: semibold;
   }
 }
