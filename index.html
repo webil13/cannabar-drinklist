@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
+  <link href="https://file.myfontastic.com/qjQZ9rSCVMuoS4NmtJqsRT/icons.css" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>Drinks Menu</title>
 </head>
@@ -20,10 +21,10 @@
         Getränkekarte
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
+        aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse navbar-expand-md" id="navbarNav">
         <ul class="navbar-nav">
           <li data-target="#drinklist-carousel" data-slide-to="0" class="nav-item active">
             <a>Softdrinks</a>
@@ -46,15 +47,21 @@
         </ul>
       </div>
     </nav>
-    <div id="drinklist-carousel" class="carousel slide" data-ride="carousel" data-pause="hover">
+    <div id="drinklist-carousel" class="carousel slide" data-ride="carousel" data-interval="9000" data-pause="hover">
       <!-- data-ride="false" -->
       <ol class="carousel-nav carousel-indicators">
-        <li data-target="#drinklist-carousel" data-slide-to="0" class="active">Softdrinks</li>
-        <li data-target="#drinklist-carousel" data-slide-to="1">Heisse Getränke</li>
-        <li data-target="#drinklist-carousel" data-slide-to="2">Spirituosen</li>
-        <li data-target="#drinklist-carousel" data-slide-to="3">Vodka &amp; Gin</li>
-        <li data-target="#drinklist-carousel" data-slide-to="4">Grappa, Nocino &amp; Rum</li>
-        <li data-target="#drinklist-carousel" data-slide-to="5">Whisky, Bourbon &amp; Cognac</li>
+        <li data-toggle="tooltip" data-placement="top" title="Softdrinks" data-target="#drinklist-carousel"
+          data-slide-to="0" class="active icon-softdrinks"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Heisse Getränke" data-target="#drinklist-carousel"
+          data-slide-to="1" class="icon-hotdrinks"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Spirituosen" data-target="#drinklist-carousel"
+          data-slide-to="2" class="icon-spirits"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Vodka &amp; Gin" data-target="#drinklist-carousel"
+          data-slide-to="3" class="icon-vodka-gin"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Grappa, Nocino &amp; Rum" data-target="#drinklist-carousel"
+          data-slide-to="4" class="icon-grappa-rum"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Whisky, Bourbon &amp; Cognac" data-target="#drinklist-carousel"
+          data-slide-to="5" class="icon-whisky-cognac"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -1087,6 +1094,11 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>

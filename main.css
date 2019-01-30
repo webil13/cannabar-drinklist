@@ -24,28 +24,33 @@ body {
 
 .carousel-indicators {
   position: fixed;
-  bottom: 0;
+  left: 0;
   color: black;
-  font-family: 'Domine', serif;
+  font-family: "untitled-font-2";
+  font-size: 2em;
   box-sizing: border-box;
   height: auto;
 }
 
 .carousel-indicators li {
   text-indent: 0;
-  padding: 1px 10px;
+  padding: 5px 10px;
   margin: .2em .5em;
   width: auto;
   height: auto;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
+  border-radius: 50%;
+  box-sizing: border-box;
 }
 
 .carousel-indicators li:hover, .carousel-indicators li.active {
   color: #3aaf1f;
   font-weight: bold;
-  border-bottom: 3px solid #3aaf1f;
+  /* border-bottom: 3px solid #3aaf1f; */
+  transition: color .7s ease;
+  transition: transform .7s ease;
+  transform: scale(1.3);
+  font-size: 1em;
+  border-radius: 10px;
 }
 
 .carousel-item {
@@ -54,12 +59,30 @@ body {
   background-color: rgba(0, 0, 0, .8);
 }
 
+ol.carousel-nav {
+  background: rgba(0, 0, 0, .2)
+}
+
 /* nav styles */
+
+li.nav-item {
+  margin: .5em;
+}
+
+li.nav-item>a {
+  padding: .5em 1em;
+}
 
 li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
   color: #3aaf1f!important;
   outline: none;
   cursor: pointer;
+  /* border: 2px solid #3aaf1f; */
+  /* background: rgba(255, 255, 255, 1) */
+  -moz-box-shadow: inset 0 0 15px #3aaf1f;
+  -webkit-box-shadow: inset 0 0 15px #3aaf1f;
+  box-shadow: inset 0 0 15px #3aaf1f;
+  transition: color .8s ease, box-shadow .6s ease;
 }
 
 /* images */
@@ -108,19 +131,26 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text 
 /* media queries */
 
 @media(max-width: 450px) {
-  .carousel-indicators {
-    font-size: 6px;
-    font-weight: 200;
-  }
   .carousel-indicators li {
-    margin: 1px;
-    padding: 3px
+    margin: 5px;
+    padding: 5px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+  }
+  .carousel-indicators li:hover, .carousel-indicators li.active {
+    color: #3aaf1f;
+    transition-duration: .5s;
+    transform: scale(1.1);
+    font-size: 1em;
   }
 }
 
-@media(max-width: 650px) {
+/* @media(max-width: 650px) {
   .carousel-indicators {
     font-size: 11px;
     font-weight: semibold;
   }
-}
+} */
