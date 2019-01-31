@@ -102,6 +102,17 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
   opacity: .9;
 }
 
+/* modal Images */
+
+.modal-img {
+  max-height: 80vh;
+}
+
+.modal-img:hover {
+  transform: scale(1.1);
+  transition: transform .7s ease;
+}
+
 /* table styles */
 
 .drinks-table {
