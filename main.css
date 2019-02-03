@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
 @import url('https://fonts.googleapis.com/css?family=Domine');
-/* main container */
+/* main container and global styles */
 
 body {
   overflow: scroll;
@@ -22,11 +22,14 @@ body {
 
 /* carousel styles */
 
+.container-fluid {
+  padding: 0;
+}
+
 .carousel-indicators {
   position: fixed;
   left: 0;
   color: black;
-  font-family: "untitled-font-2";
   font-size: 2em;
   box-sizing: border-box;
   height: auto;
@@ -45,7 +48,6 @@ body {
 .carousel-indicators li:hover, .carousel-indicators li.active {
   color: #3aaf1f;
   font-weight: bold;
-  /* border-bottom: 3px solid #3aaf1f; */
   transition: color .7s ease;
   transition: transform .7s ease;
   transform: scale(1.3);
@@ -57,30 +59,21 @@ body {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  /* margin: 0; */
   background-color: rgba(0, 0, 0, .8);
-}
-
-ol.carousel-nav {
-  background: rgba(0, 0, 0, .2);
 }
 
 /* nav styles */
 
-li.nav-item {
-  margin: .3em;
-}
-
 li.nav-item>a {
-  padding: 0;
+  margin: .3em;
+  padding: 5px;
+  font-family: 'Domine', serif;
 }
 
 li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
   color: #3aaf1f!important;
   outline: none;
   cursor: pointer;
-  /* border: 2px solid #3aaf1f; */
-  /* background: rgba(255, 255, 255, 1) */
   -moz-box-shadow: inset 0 0 15px #3aaf1f;
   -webkit-box-shadow: inset 0 0 15px #3aaf1f;
   box-shadow: inset 0 0 15px #3aaf1f;
@@ -92,7 +85,7 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
 .logo {
   position: absolute;
   right: 1em;
-  top: 3.5em;
+  top: 5.5em;
   width: 120px;
   height: 120px;
 }
@@ -108,7 +101,6 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
 
 .modal-text {
   max-height: 85vh;
-  overflow: hidden;
 }
 
 .modal-img {
@@ -122,23 +114,16 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
 
 .modal-title {
   color: darkslategrey;
+  font-family: 'Domine', serif;
 }
 
 /* table styles */
 
 .drinks-table {
   width: 85%;
-  margin-top: 3.5em;
+  margin-top: 5.5em;
   margin-left: 20px;
   margin-bottom: 7em;
-}
-
-td:nth-child(1) {
-  width: 50%;
-}
-
-td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text {
-  font-weight: 300;
 }
 
 .italic-text {
@@ -148,15 +133,20 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text 
 .table-head {
   font-weight: bold;
   padding-left: .5em;
+  font-family: 'Domine', serif;
 }
 
 /* media queries */
 
-@media(max-width: 450px) {
+@media(max-width: 520px) {
+  .drinks-table {
+    margin-top: 5em;
+    font-size: 14px;
+    line-height: 16px;
+  }
   .carousel-indicators li {
     margin: 5px;
     padding: 5px;
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -168,14 +158,16 @@ td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5), .light-text 
     transform: scale(1.1);
     font-size: 1em;
   }
-}
-
-@media(min-width: 1000px) {
   li.nav-item {
-    margin: .6em;
+    margin: .5em 0;
   }
   li.nav-item>a {
-    font-size: 1.2em;
+    padding: .5em;
+  }
+}
+
+@media(min-width: 992px) {
+  li.nav-item>a {
     padding: .5em;
   }
 }
