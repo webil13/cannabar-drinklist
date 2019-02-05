@@ -2,8 +2,15 @@
 @import url('https://fonts.googleapis.com/css?family=Domine');
 /* main container and global styles */
 
+/* not displaying scrollbars on apple */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
-  overflow: scroll;
+  overflow: inherit;
+  scroll-behavior: smooth;
 }
 
 .btn:focus, .navbar-toggler:focus {
@@ -110,8 +117,7 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
 
 .modal-img:hover {
   transform: scale(1.1);
-  margin-bottom: 1.5em;
-  transition: transform .7s ease, margin-bottom .7s ease;
+  transition: transform .7s ease;
 }
 
 .modal-title {
@@ -165,6 +171,13 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
   }
   li.nav-item>a {
     padding: .5em;
+  }
+}
+
+@media(max-width: 768px) {
+  .modal-img:hover {
+    margin-bottom: 2.5em;
+    transition: margin-bottom .6s ease, transform .7s ease;
   }
 }
 
