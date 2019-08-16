@@ -25,17 +25,13 @@
       <a class="navbar-brand ml-auto mr-auto" href="">
         Getränkekarte
       </a>
-      <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button> -->
       <div class="collapse navbar-collapse navbar-expand-lg" id="navbarNav">
         <ul class="navbar-nav">
           <li data-target="#drinklist-carousel" data-slide-to="0" class="nav-item active">
-            <a>Softdrinks</a>
+            <a>Softdrinks &amp; Bier</a>
           </li>
           <li data-target="#drinklist-carousel" data-slide-to="1" class="nav-item">
-            <a>Heisse Getränke</a>
+            <a>Heisse Getränke &amp; Wein</a>
           </li>
           <li data-target="#drinklist-carousel" data-slide-to="2" class="nav-item">
             <a>Spirituosen</a>
@@ -54,10 +50,10 @@
     </nav>
     <div id="drinklist-carousel" class="carousel slide" data-ride="carousel" data-interval="9000" data-pause="hover">
       <ol class="carousel-nav carousel-indicators">
-        <li data-toggle="tooltip" data-placement="top" title="Softdrinks" data-target="#drinklist-carousel"
+        <li data-toggle="tooltip" data-placement="top" title="Softdrinks &amp; Bier" data-target="#drinklist-carousel"
           data-slide-to="0" class="active icon-softdrinks"></li>
-        <li data-toggle="tooltip" data-placement="top" title="Heisse Getränke" data-target="#drinklist-carousel"
-          data-slide-to="1" class="icon-hotdrinks"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Heisse Getränke &amp; Wein"
+          data-target="#drinklist-carousel" data-slide-to="1" class="icon-hotdrinks"></li>
         <li data-toggle="tooltip" data-placement="top" title="Spirituosen" data-target="#drinklist-carousel"
           data-slide-to="2" class="icon-spirits"></li>
         <li data-toggle="tooltip" data-placement="top" title="Vodka &amp; Gin" data-target="#drinklist-carousel"
@@ -67,12 +63,16 @@
         <li data-toggle="tooltip" data-placement="top" title="Whisky, Bourbon &amp; Cognac"
           data-target="#drinklist-carousel" data-slide-to="5" class="icon-whisky-cognac"></li>
       </ol>
+      <!-- Start of Carousel Pages -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- Softdrinks -->
           <div class="container">
             <table class="drinks-table table-striped">
               <tbody>
+                <tr>
+                  <td class="table-head">Softgetränke & Bier</td>
+                </tr>
                 <tr>
                   <td class="">Arkina</td>
                   <td class="">33 cl</td>
@@ -104,13 +104,13 @@
                   <td class="">5,-</td>
                   <td class="">7,-</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="">ChariTea Bio</td>
                   <td class="">33 cl</td>
                   <td class=""></td>
                   <td class="">4.90,-</td>
                   <td class=""></td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td></td>
                 </tr>
@@ -188,31 +188,45 @@
                   <td class=""></td>
                 </tr>
                 <tr>
-                  <td></td>
+                  <td class="">Dry Tonic</td>
+                  <td class="">20 cl</td>
+                  <td class=""></td>
+                  <td class="">4.50,-</td>
+                  <td class=""></td>
                 </tr>
                 <tr>
+                  <td class="">Rosemary Tonic</td>
+                  <td class="">20 cl</td>
+                  <td class=""></td>
+                  <td class="">4.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td class="">Ginger & Lemongrass Tonic</td>
+                  <td class="">20 cl</td>
+                  <td class=""></td>
+                  <td class="">4.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <!-- <tr>
                   <td class="">Fever Tree Indian Tonic Water</td>
                   <td class="">20 cl</td>
                   <td class=""></td>
                   <td class="">5,-</td>
                   <td class=""></td>
-                </tr>
-                <tr>
+                </tr> -->
+                <!-- <tr>
                   <td class="">Tom's Tonic Water</td>
                   <td class="">20 cl</td>
                   <td class=""></td>
                   <td class="">6,-</td>
                   <td class=""></td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td></td>
-                </tr>
-                <tr>
-                  <td class="">Tom's Tonic Water</td>
-                  <td class="">20 cl</td>
-                  <td class=""></td>
-                  <td class="">6,-</td>
-                  <td class=""></td>
                 </tr>
                 <tr>
                   <td></td>
@@ -245,13 +259,13 @@
                   <td class="">4.50,-</td>
                   <td class=""></td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="">Philippine Calamansisaft</td>
                   <td class="">25 cl</td>
                   <td class=""></td>
                   <td class="">4.50,-</td>
                   <td class=""></td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td></td>
                 </tr>
@@ -281,7 +295,7 @@
                 </tr>
                 <tr>
                   <td class="light-text italic-text">Apfel, Apfel-Cassis, Apfel-Kirsche, Apfel-Traube,<br />
-                    Apfel-Rhabarber, Apfel-Himbeere, Apfel-Erdbeere</td>
+                    Apfel-Rhabarber, Apfel-Himbeere</td>
                 </tr>
                 <tr>
                   <td></td>
@@ -297,6 +311,110 @@
                   <td class="light-text italic-text">Ingwer-Apfel,Granatapfel, Orangenblüten,
                     Rosenblüten,<br /> Rhabarber, Cassis, Erdbeer</td>
                 </tr>
+                <tr>
+                  <td class="table-head">Bier Offen</td>
+                </tr>
+                <tr>
+                  <td>Gurten Lager</td>
+                  <td class="">30 cl</td>
+                  <td class="">50 cl</td>
+                  <td class="">4.60,-</td>
+                  <td class="">7.50,-</td>
+                </tr>
+                <tr>
+                  <td class="table-head">Bier Flaschen</td>
+                </tr>
+                <tr>
+                  <td>Lola Bier IPA Alkoholfrei</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Feldschlösschen Braufrisch</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">5.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Gurten Lager</td>
+                  <td class="">50 cl</td>
+                  <td class=""></td>
+                  <td class="">5.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Feldschlösschen Bügel</td>
+                  <td class="">50 cl</td>
+                  <td class=""></td>
+                  <td class="">6.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Leffe Blonde</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Leffe Vieille Cuvée</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">7,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Corona Extra</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Valaisanne Pale Ale</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6.50,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Walterbier Zäzi Ale</td>
+                  <td class="">50 cl</td>
+                  <td class=""></td>
+                  <td class="">7,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Appenzeller Hanfblüte</td>
+                  <td class="">50 cl</td>
+                  <td class=""></td>
+                  <td class="">7,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Guinness</td>
+                  <td class="">50 cl</td>
+                  <td class=""></td>
+                  <td class="">7,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Hoegaarden</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td>Somersby Apple</td>
+                  <td class="">33 cl</td>
+                  <td class=""></td>
+                  <td class="">6,-</td>
+                  <td class=""></td>
+                </tr>
               </tbody>
             </table>
           </div>
@@ -308,7 +426,7 @@
 
         </div>
 
-        <!-- Heisse Getraenke -->
+        <!-- Heisse Getraenke & Wein -->
         <div class="carousel-item">
           <div class="container">
             <table class="drinks-table table-striped">
@@ -321,7 +439,7 @@
                   <td class=""></td>
                 </tr>
                 <tr>
-                  <td class="light-text italic-text">Ingwer-Lemon, Minze, Assam, Früchtetee</td>
+                  <td class="light-text italic-text">Ingwer-Lemon, Minze, Assam, Früchtetee, Dong Ding</td>
                 </tr>
                 <tr>
                   <td></td>
@@ -410,7 +528,71 @@
                   <td class=""></td>
                 </tr>
                 <tr>
-                  <td class="light-text italic-text">Banane, Erdbeer, Schoggi</td>
+                  <td class="light-text italic-text">Erdbeer, Schokolade</td>
+                </tr>
+                <tr>
+                  <td class="">mit Schuss (4cl)</td>
+                  <td class="">30 cl</td>
+                  <td class=""></td>
+                  <td class="">13,-</td>
+                  <td class=""></td>
+                </tr>
+                <tr>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td class="table-head">Wein</td>
+                </tr>
+                <tr>
+                  <td class="">Chardonnay</td>
+                  <td class="">10 cl</td>
+                  <td class="">6,-</td>
+                  <td class="">20 cl</td>
+                  <td class="">11,-</td>
+                  <td class="">50 cl</td>
+                  <td class="">22,-</td>
+                </tr>
+                <tr>
+                  <td class="">Pinot Gris</td>
+
+                  <td class="">50 cl</td>
+                  <td class="">24,-</td>
+                </tr>
+                <tr>
+                  <td class="">Oeil de perdrix</td>
+                  <td class="">10 cl</td>
+                  <td class="">6,-</td>
+                  <td class="">25cl</td>
+                  <td class="">12,-</td>
+                  <td class="">50 cl</td>
+                  <td class="">21,-</td>
+                </tr>
+                <tr>
+                  <td class="">Pinot Noir</td>
+                  <td class="">10 cl</td>
+                  <td class="">6,-</td>
+                  <td class="">25cl</td>
+                  <td class="">12,-</td>
+                  <td class="">50 cl</td>
+                  <td class="">21,-</td>
+                </tr>
+                <tr>
+                  <td class="">Garanoir</td>
+
+                  <td class="">50 cl</td>
+                  <td class="">23,-</td>
+                </tr>
+                <tr>
+                  <td class="">Zweigelt</td>
+
+                  <td class="">70 cl</td>
+                  <td class="">29,-</td>
+                </tr>
+                <tr>
+                  <td class="">Prosecco Delizia</td>
+
+                  <td class="">20 cl</td>
+                  <td class="">12,-</td>
                 </tr>
               </tbody>
             </table>
@@ -497,7 +679,7 @@
                   <td class="">8,-</td>
                 </tr>
                 <tr>
-                  <td class="">Ricard</td>
+                  <td class="">Ricard Pastis</td>
                   <td class=""></td>
                   <td class="">45%</td>
                   <td class="">4 cl</td>
@@ -964,13 +1146,13 @@
           <img src="./img/logo.png" alt="" class="logo d-none d-sm-none d-md-block">
         </div>
 
-        <!-- Grappa, Nocino & Rum -->
+        <!-- Grappa & Rum -->
         <div class="carousel-item">
           <div class="container">
             <table class="drinks-table table-striped">
               <tbody>
                 <tr>
-                  <td class="table-head">Grappa &amp; Nocino</td>
+                  <td class="table-head">Grappa</td>
                 </tr>
                 <tr>
                   <td class="">Tradizione 41&deg; Grappa</td>
@@ -994,21 +1176,21 @@
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
-                  <td class="">Po' di Poli Grappa Elegant</td>
+                  <td class="">Sarpa di Poli Grappa</td>
                   <td class=""></td>
                   <td class="">40%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
-                  <td class="">Sarpa ORO di Poli</td>
+                  <td class="">Sarpa Barrique di Poli</td>
                   <td class=""></td>
                   <td class="">40%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
-                  <td class="">Grappa Prosecco Nonin</td>
+                  <td class="">Nonino Grappa Il Prosecco Riserva</td>
                   <td class=""></td>
                   <td class="">41%</td>
                   <td class="">2 cl</td>
@@ -1022,13 +1204,13 @@
                   <td class="">7,-</td>
                 </tr>
                 <tr>
-                  <td class="">Grappa Nostrana<br />Lacrima Vitis</td>
+                  <td class="">Distillato di uva Americana</td>
                   <td class=""></td>
                   <td class="">46%</td>
                   <td class="">2 cl</td>
                   <td class="">7,-</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                   <td class="">Grappa Quttromani</td>
                   <td class=""></td>
                   <td class="">43%</td>
@@ -1041,7 +1223,7 @@
                   <td class="">30%</td>
                   <td class="">2 cl</td>
                   <td class="">6,-</td>
-                </tr>
+                </tr> -->
                 <tr>
                   <td class="table-head">Rum</td>
                 </tr>
@@ -1100,11 +1282,11 @@
                   <td class="">15,-</td>
                 </tr>
                 <tr>
-                  <td class="">Plantation Brabados<br />Rum 5 años</td>
+                  <td class="">Langatun White Bio Rum</td>
                   <td class=""></td>
-                  <td class="">40%</td>
+                  <td class="">49.12%</td>
                   <td class="">4 cl</td>
-                  <td class="">13,-</td>
+                  <td class="">12,-</td>
                 </tr>
 
               </tbody>
