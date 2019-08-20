@@ -106,7 +106,8 @@ li.nav-item>a:hover, li.nav-item>a:active, li.nav-item>a:focus {
 }
 
 .modal-img {
-  max-height: 80vh;
+  /* align-items: flex-start;
+  max-height: 80vh; */
   margin: 0;
 }
 

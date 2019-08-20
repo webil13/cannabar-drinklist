@@ -58,13 +58,14 @@
           data-slide-to="2" class="icon-spirits"></li>
         <li data-toggle="tooltip" data-placement="top" title="Vodka &amp; Gin" data-target="#drinklist-carousel"
           data-slide-to="3" class="icon-vodka-gin"></li>
-        <li data-toggle="tooltip" data-placement="top" title="Grappa, Nocino &amp; Rum"
-          data-target="#drinklist-carousel" data-slide-to="4" class="icon-grappa-rum"></li>
+        <li data-toggle="tooltip" data-placement="top" title="Grappa &amp; Rum" data-target="#drinklist-carousel"
+          data-slide-to="4" class="icon-grappa-rum"></li>
         <li data-toggle="tooltip" data-placement="top" title="Whisky, Bourbon &amp; Cognac"
           data-target="#drinklist-carousel" data-slide-to="5" class="icon-whisky-cognac"></li>
       </ol>
       <!-- Start of Carousel Pages -->
       <div class="carousel-inner">
+        <!-- Softgetränke & Bier -->
         <div class="carousel-item active">
           <!-- Softdrinks -->
           <div class="container">
@@ -104,13 +105,7 @@
                   <td class="">5,-</td>
                   <td class="">7,-</td>
                 </tr>
-                <!-- <tr>
-                  <td class="">ChariTea Bio</td>
-                  <td class="">33 cl</td>
-                  <td class=""></td>
-                  <td class="">4.90,-</td>
-                  <td class=""></td>
-                </tr> -->
+
                 <tr>
                   <td></td>
                 </tr>
@@ -211,20 +206,6 @@
                 <tr>
                   <td></td>
                 </tr>
-                <!-- <tr>
-                  <td class="">Fever Tree Indian Tonic Water</td>
-                  <td class="">20 cl</td>
-                  <td class=""></td>
-                  <td class="">5,-</td>
-                  <td class=""></td>
-                </tr> -->
-                <!-- <tr>
-                  <td class="">Tom's Tonic Water</td>
-                  <td class="">20 cl</td>
-                  <td class=""></td>
-                  <td class="">6,-</td>
-                  <td class=""></td>
-                </tr> -->
                 <tr>
                   <td></td>
                 </tr>
@@ -259,13 +240,6 @@
                   <td class="">4.50,-</td>
                   <td class=""></td>
                 </tr>
-                <!-- <tr>
-                  <td class="">Philippine Calamansisaft</td>
-                  <td class="">25 cl</td>
-                  <td class=""></td>
-                  <td class="">4.50,-</td>
-                  <td class=""></td>
-                </tr> -->
                 <tr>
                   <td></td>
                 </tr>
@@ -317,8 +291,8 @@
                 <tr>
                   <td>Gurten Lager</td>
                   <td class="">30 cl</td>
-                  <td class="">50 cl</td>
                   <td class="">4.60,-</td>
+                  <td class="">50 cl</td>
                   <td class="">7.50,-</td>
                 </tr>
                 <tr>
@@ -680,7 +654,10 @@
                 </tr>
                 <tr>
                   <td class="">Ricard Pastis</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#ricardModal">
+                      Mehr
+                    </button></td>
                   <td class="">45%</td>
                   <td class="">4 cl</td>
                   <td class="">8,-</td>
@@ -813,14 +790,20 @@
                 </tr>
                 <tr>
                   <td class="">San Cosme Mezcal Blanco</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#cosmeModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">2 cl</td>
                   <td class="">6,-</td>
                 </tr>
                 <tr>
                   <td class="">Mezcal Meteoro Joven Espadin</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#meteoroModal">
+                      Mehr
+                    </button></td>
                   <td class="">45%</td>
                   <td class="">2 cl</td>
                   <td class="">7,-</td>
@@ -842,7 +825,10 @@
                 </tr>
                 <tr>
                   <td class="">Absolut</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#absolutModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">4 cl</td>
                   <td class="">10,-</td>
@@ -869,6 +855,16 @@
                   <td class="">11,-</td>
                 </tr>
                 <tr>
+                  <td class="">Langatun Vodka 1616</td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#langatunVodkaModal">
+                      Mehr
+                    </button></td>
+                  <td class="">49.12%</td>
+                  <td class="">4 cl</td>
+                  <td class="">12,-</td>
+                </tr>
+                <tr>
                   <td class="">Belvedere</td>
                   <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
                       data-target="#belvedereModal">
@@ -877,6 +873,26 @@
                   <td class="">40%</td>
                   <td class="">4 cl</td>
                   <td class="">12,-</td>
+                </tr>
+                <tr>
+                  <td class="">Matte Organic Wodka</td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#matteWodkaModal">
+                      Mehr
+                    </button></td>
+                  <td class="">40%</td>
+                  <td class="">4 cl</td>
+                  <td class="">13,-</td>
+                </tr>
+                <tr>
+                  <td class="">Outerspace Vodka</td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#outerspaceModal">
+                      Mehr
+                    </button></td>
+                  <td class="">40%</td>
+                  <td class="">4 cl</td>
+                  <td class="">13,-</td>
                 </tr>
                 <tr>
                   <td class="">Beluga</td>
@@ -1056,6 +1072,16 @@
                   <td class="">13,-</td>
                 </tr>
                 <tr>
+                  <td class="">Dictador Premium Colombian Aged Gin</td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#dictadorGinModal">
+                      Mehr
+                    </button></td>
+                  <td class="">43%</td>
+                  <td class="">4 cl</td>
+                  <td class="">13,-</td>
+                </tr>
+                <tr>
                   <td class="">Aarwer Swiss Pine Gin</td>
                   <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
                       data-target="#aarwerModal">
@@ -1114,7 +1140,10 @@
                 </tr>
                 <tr>
                   <td class="">The Wild Alps<br />Morris London Dry Gin</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#morrisGinModal">
+                      Mehr
+                    </button></td>
                   <td class="">47%</td>
                   <td class="">4 cl</td>
                   <td class="">13,-</td>
@@ -1163,73 +1192,83 @@
                 </tr>
                 <tr>
                   <td class="">Grappa Vallombrosa Chiara</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#grappaChiaraModal">
+                      Mehr
+                    </button></td>
                   <td class="">43%</td>
                   <td class="">2 cl</td>
                   <td class="">6,-</td>
                 </tr>
                 <tr>
                   <td class="">Grappa Vallombrosa Rovere</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#grappaRovereModal">
+                      Mehr
+                    </button></td>
                   <td class="">45%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
                   <td class="">Sarpa di Poli Grappa</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#sarpaPoliModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
                   <td class="">Sarpa Barrique di Poli</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#sarpaBarriqueModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
                   <td class="">Nonino Grappa Il Prosecco Riserva</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#grappaNoninoModal">
+                      Mehr
+                    </button></td>
                   <td class="">41%</td>
                   <td class="">2 cl</td>
                   <td class="">6.50,-</td>
                 </tr>
                 <tr>
                   <td class="">Grappa di Amarone</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#grappaAmaroneModal">
+                      Mehr
+                    </button></td>
                   <td class="">43%</td>
                   <td class="">2 cl</td>
                   <td class="">7,-</td>
                 </tr>
                 <tr>
                   <td class="">Distillato di uva Americana</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#uvaAmericanaModal">
+                      Mehr
+                    </button></td>
                   <td class="">46%</td>
                   <td class="">2 cl</td>
                   <td class="">7,-</td>
                 </tr>
-                <!-- <tr>
-                  <td class="">Grappa Quttromani</td>
-                  <td class=""></td>
-                  <td class="">43%</td>
-                  <td class="">2 cl</td>
-                  <td class="">8,-</td>
-                </tr>
-                <tr>
-                  <td class="">Nocino del Ticino</td>
-                  <td class=""></td>
-                  <td class="">30%</td>
-                  <td class="">2 cl</td>
-                  <td class="">6,-</td>
-                </tr> -->
                 <tr>
                   <td class="table-head">Rum</td>
                 </tr>
                 <tr>
                   <td class="">Havana Club 3 anos</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#havanaModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">4 cl</td>
                   <td class="">10,-</td>
@@ -1283,7 +1322,10 @@
                 </tr>
                 <tr>
                   <td class="">Langatun White Bio Rum</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#langatunRumModal">
+                      Mehr
+                    </button></td>
                   <td class="">49.12%</td>
                   <td class="">4 cl</td>
                   <td class="">12,-</td>
@@ -1305,7 +1347,10 @@
                 </tr>
                 <tr>
                   <td class="">Canadian Club</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#canadianClubModal">
+                      Mehr
+                    </button></td>
                   <td class="">40%</td>
                   <td class="">4 cl</td>
                   <td class="">10,-</td>
@@ -1319,7 +1364,10 @@
                 </tr>
                 <tr>
                   <td class="">Glenglassaugh Torfa</td>
-                  <td class=""></td>
+                  <td class=""><button type="button" class="btn btn-sm btn-outline-info" data-toggle="modal"
+                      data-target="#glenglassaughTorfaModal">
+                      Mehr
+                    </button></td>
                   <td class="">50%</td>
                   <td class="">4 cl</td>
                   <td class="">13,-</td>
@@ -1455,6 +1503,54 @@
         </div>
       </div>
       <!-- end aarwerModal -->
+      <!-- absolutModal -->
+      <div class="modal fade" id="absolutModal" tabindex="-1" role="dialog" aria-labelledby="absolutModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="absolutModalLabel">Absolut Vodka</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/AbsolutVodka.png" alt="Absolut Vodka" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Absolut Vodka ist eine der bekanntesten und weltweit am meisten verbreiteten Vodkamarken. Das kommt
+                    nicht von ungefähr: Seit 1879 wird die Spirituose in der originalen Brennerei in dem südschwedischen
+                    Åhus produziert. Lars
+                    Olsson Smith erfand damals ein spezielles Destillationsverfahren, wodurch die aus Winterweizen und
+                    Wasser hergestellte Flüssigkeit
+                    einen nie zuvor gesehenen Reinheitsgrad erreichte. Anfangs hiess der Vodka mit 40%-igem
+                    Alkoholgehalt „Absolut rent Brännvin“.
+                    Erst in den 1980ern, also über 100 Jahre nach der Gründung, brachte das Unternehmen aromatisierte
+                    Sorten mit Zitronen-, Himbeer-
+                    oder Birnengeschmack heraus. Zu jener Zeit hatte der Vodka gerade erst seinen Erfolgszug durch
+                    Amerika begonnen. Das Sortiment
+                    umfasst heutzutage 23 Produkte. Ungeschlagen an der Front bleibt jedoch die Original-Version in der
+                    ikonenhaften Flasche mit blauer
+                    Schrift. Die hohe Reinheit des Destillats erlaubt es, diesen Vodka pur zu verkosten, doch der wahre
+                    Reiz entfaltet sich erst dann,
+                    wenn man die vielen Einsatzmöglichkeiten hinter der Theke realisiert. Weltbekannte Cocktails wie
+                    Cosmopolitan, Martini, Margarita, Moscow Mule, Bloody Mary, Screwdriver, Appletini, Capirovska und
+                    Lemon Drop werden mit Vodka gemixt. <br /><br />
+                    <span class="light-text">Herkunft: <small>Åhus (Skåne län), Schweden</small></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end absolutModal -->
 
       <!-- amarettoModal -->
       <div class="modal fade" id="amarettoModal" tabindex="-1" role="dialog" aria-labelledby="amarettoModalLabel"
@@ -1834,6 +1930,59 @@
         </div>
       </div>
       <!-- end breilModal -->
+      <!-- canadianClubModal -->
+      <div class="modal fade" id="canadianClubModal" tabindex="-1" role="dialog"
+        aria-labelledby="canadianClubModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="canadianClubModalLabel">Canadian Club Whisky</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/CanadianClub.png" alt="Canadian Club Whisky" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Siedlern aus Schottland und Irland ist es zu verdanken, dass Kanada ähnlich wie Amerika auf eine
+                    jahrhundertealte Whisky-Tradition
+                    zurückblicken kann. Die Anfänge dazu wurden in der zweiten Hälfte des 18. Jahrhundert gemacht,
+                    damals noch mit Roggen als
+                    Hauptbestandteil der Maische. 1884 ging der „Hiram Walker Club“ von einer Destillerie in Ontario als
+                    erster kommerziell vermarkteter,
+                    kanadischer Whisky in die Annalen ein. Als Hiram Walker in den 1880er Jahren in die USA zu liefern
+                    begann und dort grosse Erfolge
+                    verzeichnete, zwang ihn die einheimische Whiskylobby, seine Produkte entsprechend ihrer Herkunft zu
+                    kennzeichen - so entstand der
+                    Name Canadian Club. Die ab 1919 geltende Prohibition in den USA liess die Marke weiterhin
+                    profitieren, denn die Canadian Club
+                    Whiskys waren bei den Schmugglern, die damals die grenzüberschreitenden Wasserwege unsicher machten,
+                    besonders begehrt.
+                    Der Canadian Club Original ist das Flaggschiff der Marke und der meistverkaufte Whisky auf dem
+                    heimischen Markt. Er wird aus einer
+                    fermentierten Maische gebrannt, die Mais, Roggen, Roggenmalz und Gerstenmalz beinhaltet. Die genaue
+                    Zusammensetzung wird
+                    natürlich nicht verraten! Vor der Fassreifung in ehemaligen Bourbon Barrels erfolgt das Blending von
+                    verschiedenen Destillaten.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Windsor - Ontario, Kanada</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end canadianClubModal -->
 
       <!-- cointreauModal -->
       <div class="modal fade" id="cointreauModal" tabindex="-1" role="dialog" aria-labelledby="cointreauModalLabel"
@@ -1955,6 +2104,102 @@
         </div>
       </div>
       <!-- end czarsModal -->
+      <!-- dictadorGinModal -->
+      <div class="modal fade" id="dictadorGinModal" tabindex="-1" role="dialog" aria-labelledby="dictadorGinModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="dictadorGinModalLabel">Dictador Premium Colombian Aged Gin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/DictadorPremium.png" alt="Dictador Premium Colombian Aged Gin"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Hergestellt wird dieser Gin in der Brennerei Colombiana, die 1913 in Cartagena de Indias gegründet
+                    wurde. Die Mitarbeiter brennen
+                    traditionsgemäss Rum in den verschiedensten Varianten, wenden jedoch ihre Expertise auch auf völlig
+                    andere Destillate wie Gin an.
+                    Der Colombian Aged Gin ist ein auf Zuckerrohrschnaps basierender Gin, welcher fünf Mal destilliert
+                    wird. Angereichert wird er mit
+                    diversen Beeren, Gewürzen, Kräuterpflanzen und Zitrusfruchtschalen (von Mandarinen und Zitronen).
+                    Danach lässt man den Gin acht
+                    Monate lang reifen - und zwar in Eichenfässern, die zuvor den Dictador Rums eine vorübergehende
+                    Heimat boten. Dieser Reifeprozess
+                    ist es, der dem Colombian Gin seine Milde verleiht.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Cartagena de Indas, Kolumbien</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end dictadorGinModal -->
+      <!-- morrisGinModal -->
+      <div class="modal fade" id="morrisGinModal" tabindex="-1" role="dialog" aria-labelledby="morrisGinModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="morrisGinModalLabel">The Wild Alps Morris London Dry Gin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/MorrisLondonGin.png" alt="The Wild Alps Morris London Dry Gin"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Der Name des Morris Gins von der Schweizer Marke "The Wild Alps" geht auf den Architekten und
+                    Designer William Morris zurück,
+                    nach dessen Plänen John Oakley Maund drei Villen in Weggis am Vierwaldstätter See und in Schoppernau
+                    im Vorarlberg errichten
+                    liess. Die Häuser im typisch englischen Cottage-Stil stehen bis heute. Zu ausserordentlicher
+                    Bekanntheit gelangte allerdings die Villa
+                    Maund, um die sich zahlreiche Legenden ranken. Der deutsche Kronprinz Wilhelm nutzte das Haus eine
+                    Zeit lang als Jagdschloss, und
+                    viele Berühmtheiten gingen hier ein und aus. Schliesslich diente die Villa Maund als Inspiration für
+                    die Kreationen von The Wild Alps.
+                    Dabei ist an dem Morris London Dry Gin nicht nur das Äussere speziell. Die eigenwillige
+                    Interpretation eines traditionellen Dry Gins
+                    trägt Einflüsse von Wacholder, wilden Alpenkräutern und Zitrusfrüchten. Zum Premium Getränk wird es
+                    dadurch, dass der Gin in
+                    kupfernen Brennblasen in kleinen Chargen destilliert wird. Eine sorgfältige Auswahl stellt sicher,
+                    dass der endgültige Flascheninhalt
+                    eine möglichst hohe Qualität aufweist.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>St. Gallen, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end morrisGinModal -->
 
       <!-- deadheadModal -->
       <div class="modal fade" id="deadheadModal" tabindex="-1" role="dialog" aria-labelledby="deadheadModalLabel"
@@ -2038,6 +2283,59 @@
         </div>
       </div>
       <!-- end dictadorModal -->
+      <!-- langatunVodkaModal -->
+      <div class="modal fade" id="langatunVodkaModal" tabindex="-1" role="dialog"
+        aria-labelledby="langatunVodkaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="langatunVodkaModalLabel">Langatun Vodka 1616</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/LangatunVodka.png" alt="Langatun Vodka 1616" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Ob Whisky, Gin, Vodka, Rum, Bourbon oder Brandy - die Langatun Brennerei hat sie alle im Angebot.
+                    Die moderne Destillieranlage in
+                    dem 1616 erbauten Kornhaus in Langenthal läuft dementsprechend auf Hochtouren. Langatun ist einer
+                    von vielen heimischen
+                    Betrieben, die seit der Jahrtausendwende eine ganz neue Erfolgsgeschichte schreiben. Denn über drei
+                    Generationen hinweg war das
+                    Brennen von Spirituosen aus Getreide verboten. Grund für den Beschluss war die Sorge um das
+                    Gemeinschaftswohl gewesen, denn
+                    Ende des 19. Jahrhunderts wandelten die Bauern ihre Feldernte lieber in billigen Fusel um, als für
+                    ihre eigene Ernährungsgrundlage zu
+                    sorgen. Zwar lebten infolgedessen die Obstbrennereien auf, doch hatten die Menschen immer noch
+                    ausreichend zu essen. Heutzutage
+                    besteht in dieser Hinsicht kein Risiko mehr. Langatun profitiert davon ganz klar.
+                    Mit dem Vodka 1616 beweisen Hans Baumberger und sein Team einmal mehr, wie vielseitig ihre Destille
+                    ist - und wie viel sie
+                    tatsächlich vom Brennen verstehen. Ziel war es, einen reinen, nahezu geschmacksneutralen und milden
+                    Getreidebrand zu erzeugen, der
+                    universell einsetzbar ist. Ob pur als Shot, als Basis für einen Longdrink oder in einem komplexeren
+                    Cocktail - der siebenfach
+                    destillierte Vodka 1616 sorgt für die gewünschte Qualität.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Langenthal, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end langatunVodkaModal -->
 
       <!-- gin27Modal -->
       <div class="modal fade" id="gin27Modal" tabindex="-1" role="dialog" aria-labelledby="gin27ModalLabel"
@@ -2121,6 +2419,357 @@
         </div>
       </div>
       <!-- end gin1984Modal -->
+
+      <!-- glenglassaughTorfaModal -->
+      <div class="modal fade" id="glenglassaughTorfaModal" tabindex="-1" role="dialog"
+        aria-labelledby="glenglassaughTorfaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="glenglassaughTorfaModalLabel">Glenglassaugh Torfa</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/GlenglassaughTorfa.png" alt="Glenglassaugh Torfa" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    26 der 111 in Betrieb befindlichen Destillerien Schottlands tragen das Wort "Glen" im Namen. Es ist
+                    die englische Bezeichnung für ein
+                    Bergtal oder eine Niederung zwischen zwei Hügeln: Kein Wunder also, dass zahlreiche Destillerien in
+                    der Speyside-Region und den
+                    Highlands danach benannt sind. Glenglassaugh liegt zwar in keinem Tal, dafür aber in einer
+                    Niederung, nur fünf Gehminuten von der
+                    "Sandend Bay" entfernt, die – wenn das kühle, windige und regenreiche Klima nicht wäre – fast mit
+                    einem tropischen Badestrand
+                    konkurrieren könnte. Malerisch zwischen Getreidefeldern eingebettet, wurde die Destillerie 1874
+                    errichtet, 1908 stillgelegt, 1931
+                    wiedereröffnet, 1936 erneut geschlossen und 1960 abermals wiedereröffnet. 1986 wurde der
+                    Brennereibetrieb ein bislang letztes Mal
+                    vom Schicksal eingeholt und eingestellt, diesmal bis zum Jahr 2008. Heutzutage gehört Glenglassaugh
+                    der Benriach Distillery an. Da
+                    die Spirituosen trotz der recht unbeständigen Geschichte in Ruhe reifen konnten, gehören die 30-,
+                    40- und 51-jährigen Whiskys fest zum
+                    heutigen Sortiment.
+                    Der Glenglassaugh Torfa ist dagegen ein relativ junger Whisky und zeichnet sich durch seine
+                    rauchigen Torfnoten aus – der Name
+                    suggeriert es ja schon. Um das zu erreichen, muss die gemälzte Gerste über einem traditionellen
+                    "kiln" trocknen, der mit Torfstücken
+                    befeuert wird. Der zweifache Silbermedaillen-Gewinner kommt ohne Farbzusätze und Kühlfilterung aus.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Kanton Graubünden, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end glenglassaughTorfaModal -->
+
+      <!-- grappaChiaraModal -->
+      <div class="modal fade" id="grappaChiaraModal" tabindex="-1" role="dialog"
+        aria-labelledby="grappaChiaraModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="grappaChiaraModalLabel">Grappa Chiara</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/GrappaChiara.png" alt="Grappa Chiara" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Kanton Tessin, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end grappaChiaraModal -->
+      <!-- grappaRovereModal -->
+      <div class="modal fade" id="grappaRovereModal" tabindex="-1" role="dialog"
+        aria-labelledby="grappaRovereModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="grappaRovereModalLabel">Grappa Rovere</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/GrappaRovere.png" alt="Grappa Rovere" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Kanton Tessin, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end grappaRovereModal -->
+      <!-- grappaAmaroneModal -->
+      <div class="modal fade" id="grappaAmaroneModal" tabindex="-1" role="dialog"
+        aria-labelledby="grappaAmaroneModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="grappaAmaroneModalLabel">Grappa di Amarone</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/GrappaDiAmarone.png" alt="Grappa di Amarone" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Veneto, Italien</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end grappaAmaroneModal -->
+
+      <!-- uvaAmericanaModal -->
+      <div class="modal fade" id="uvaAmericanaModal" tabindex="-1" role="dialog"
+        aria-labelledby="uvaAmericanaModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="uvaAmericanaModalLabel">Distillato di uva Americana</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/UvoAmericana.png" alt="Distillato di uva Americana" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Tessin, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end uvaAmericanaModal -->
+
+      <!-- grappaNoninoModal -->
+      <div class="modal fade" id="grappaNoninoModal" tabindex="-1" role="dialog"
+        aria-labelledby="grappaNoninoModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="grappaNoninoModalLabel">Nonino Grappa Il Prosecco Riserva in Barriques</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/NoninoGrappa.png" alt="Nonino Grappa Il Prosecco Riserva in Barriques"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Wieso heisst dieser Grappa "Riserva in Barriques"? Na, weil er 24 Monate lang in 225L-Barriques
+                    sowie kleineren Fässern altern durfte,
+                    ehe er abgefüllt wurde. Zuvor fand eine diskontinuierliche Destillation des Tresters (von den Glera-
+                    bzw. Prosecco-Trauben) in
+                    kupfernen Brennanlagen statt, in denen die volatilen Komponenten mit all den gewünschten
+                    Aromastoffen als Dampf aufsteigen und
+                    anschliessend wieder kondensieren. Wie es in der Branche für Premium Spirituosen üblich ist, ziehen
+                    die Hersteller lediglich den
+                    Mittelteil des Destillats für den Ausbau in Fässern heran. Der angenehme Duft nach Gebäck,
+                    Schokolade und Vanille entfaltet sich
+                    prächtigst, wenn der Grappa bei 12°C serviert wird und vor dem Trinken einige Minuten im Glas atmen
+                    darf. Das heisst aber nicht, dass
+                    die 41%-ige Spirituose nicht auch als Cocktail-Zutat eine hervorragende Figur macht. Wer auf das
+                    richtige "Food Pairing" Wert legt,
+                    sollte den Nonino Grappa Il Prosecco zusammen mit Käse, Stopfleber oder dunkler Schokolade
+                    probieren.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Friaul, Italien</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end grappaNoninoModal -->
+      <!-- sarpaPoliModal -->
+      <div class="modal fade" id="sarpaPoliModal" tabindex="-1" role="dialog" aria-labelledby="sarpaPoliModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sarpaPoliModalLabel">Sarpa di Poli Grappa</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/SarpaDiPoli.png" alt="Sarpa di Poli Grappa" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Grappa wird im Herzen der Veneto-Region aus Traubentrestern, d.h. den Schalen und anderen festen
+                    Bestandteilen der Reben, welche
+                    für die Weinfermentierung nutzlos sind, hergestellt. Der Sarpa di Poli kommt dabei aus einem etwas
+                    jüngeren Haus, welches sich
+                    jedoch an traditionelle Methoden bei dem Brennen dieses Likörweins hält und heute weltweit als eine
+                    der besten und bekanntesten
+                    Grappa-Brennereien gilt. Die Geschichte der Poli-Brennerei kann bis auf das Jahr 1898 zurückgeführt
+                    werden, als die Poli-Familie ihre
+                    Grappa-Brennerei gründete, welche noch heute im Familienbesitz ist und aktuell von Jacopo Poli und
+                    seinen Geschwistern geführt
+                    wird. Ihr Grappa wird aus den Traubentrestern der Weingüter in Bassano de Grappa und in einer der
+                    ältesten Kupferbrennblasen (welche
+                    früher durch einen mit Holz befeuerten Lokomotivenmotor betrieben wurde) mit einem unterbrochenen
+                    Brennzyklus in Europa
+                    destilliert. 1958 wurde diese Methode der Befeuerung der Destillationsanlage modifiziert und den
+                    moderneren Bedürfnissen angepasst.
+                    Der Sarpa di Poli wird aus den Trestern von Cabernet (40%)- und Merlottrauben (60%) gebrannt und
+                    bekommt als ein sogenannter
+                    Junger Grappa keine Reifeperiode, sondern wird direkt abgefüllt.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Schiavo, Veneto, Italien</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end sarpaPoliModal -->
+      <!-- sarpaBarriqueModal -->
+      <div class="modal fade" id="sarpaBarriqueModal" tabindex="-1" role="dialog"
+        aria-labelledby="sarpaBarriqueModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="sarpaBarriqueModalLabel">Sarpa Barrique di Poli Grappa</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/SarpaBarrique.png" alt="Sarpa Barrique di Poli Grappa"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Grappa wird im Herzen der Veneto-Region aus Traubentrestern, d.h. den Schalen und anderen festen
+                    Bestandteilen der Reben, welche
+                    für die Weinfermentierung nutzlos sind, hergestellt. Der Sarpa Barrique di Poli kommt dabei aus
+                    einem etwas jüngeren Haus, welches
+                    sich jedoch an traditionelle Methoden bei dem Brennen dieses Likörweins hält und heute weltweit als
+                    eine der besten und
+                    bekanntesten Grappa-Brennereien gilt. Die Geschichte der Poli-Brennerei kann bis auf das Jahr 1898
+                    zurückgeführt werden, als die Poli-
+                    Familie ihre Grappa-Brennerei gründete, welche noch heute im Familienbesitz ist und aktuell von
+                    Jacopo Poli und seinen Geschwistern
+                    geführt wird. Ihr Grappa wird aus den Traubentrestern der Weingüter in Bassano de Grappa und in
+                    einer der ältesten Kupferbrennblasen
+                    (welche früher durch einen mit Holz befeuerten Lokomotivenmotor betrieben wurde) mit einem
+                    unterbrochenen Brennzyklus in Europa
+                    destilliert. 1958 wurde diese Methode der Befeuerung der Destillationsanlage modifiziert und den
+                    moderneren Bedürfnissen angepasst.
+                    Der Sarpa Barrique di Poli wird aus den Trestern von Cabernet- und Merlottrauben gebrannt und reift
+                    danach vier Jahre lang in
+                    Eichenfässern. Nach der Reife wird der Grappa abgefüllt und kann bis zu zehn Jahre aufbewahrt
+                    werden.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Schiavo, Veneto, Italien</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end sarpaBarriqueModal -->
 
       <!-- mareModal -->
       <div class="modal fade" id="mareModal" tabindex="-1" role="dialog" aria-labelledby="mareModalLabel"
@@ -2276,6 +2925,45 @@
         </div>
       </div>
       <!-- end gooseModal -->
+      <!-- havanaModal -->
+      <div class="modal fade" id="havanaModal" tabindex="-1" role="dialog" aria-labelledby="havanaModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="havanaModalLabel">Havana Club 3 Años Rum</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/Havana.png" alt="Havana Club 3 Años Rum" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Der Havana Club 3 Años ist ein echter Klassiker in den Bars dieser Welt, denn aufgrund seines
+                    erschwinglichen Preises und des
+                    hervorragenden Rufs des Herstellers wird er besonders gern zum Mixen von Daiquiri, Mojito und Co.
+                    eingesetzt. Die Noten von
+                    Zuckerrohrmolasse, Eichenholz und spritzigen Zitrusfrüchten scheinen selbst in komplexeren Cocktails
+                    noch durch.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Santa Cruz del Norte, Kuba</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end havanaModal -->
 
       <!-- hanamiModal -->
       <div class="modal fade" id="hanamiModal" tabindex="-1" role="dialog" aria-labelledby="hanamiModalLabel"
@@ -2657,6 +3345,60 @@
         </div>
       </div>
       <!-- end langatunGinModal -->
+      <!-- langatunRumModal -->
+      <div class="modal fade" id="langatunRumModal" tabindex="-1" role="dialog" aria-labelledby="langatunRumModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="langatunRumModalLabel">Langatun White Bio Rum 1616</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/LangatunWhiteRum.png" alt="Langatun White Bio Rum 1616"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Ob Whisky, Gin, Vodka, Bourbon, Rum oder Brandy - die Langatun Brennerei hat sie alle im Angebot.
+                    Die moderne Destillieranlage in
+                    dem 1616 erbauten Kornhaus in Langenthal läuft seit einigen Jahren auf Hochtouren. Langatun ist
+                    einer von vielen heimischen
+                    Betrieben, die seit der Jahrtausendwende eine ganz neue Erfolgsgeschichte schreiben - denn das
+                    Brennen von Getreide ist nun endlich
+                    wieder erlaubt. Bio-Produkte haben derweil
+                    die Spirituosenindustrie erobert. Während es
+                    bei der Gin-Herstellung aufgrund der vielen Botanicals etwas mühsamer sein dürfte, ein zu 100%
+                    organisches Produkt darzubieten, ist
+                    es bei Vodka, Whisky und Rum schon etwas einfacher.
+                    Deshalb hat die Langatun Brennerei auch einen bio-zertifizierten Rum im Angebot, der aus ökologisch
+                    angebautem Zuckerrohr besteht.
+                    Die Melasse wird in einem nicht näher definierten, südamerikanischen Land produziert und für die
+                    Weiterverarbeitung nach Europa
+                    verschifft. In der Langatun Brennerei kommen dann nur noch Wasser und Hefe in Kontakt mit der
+                    Melasse, welche durch eine
+                    zweifache Pot-Still-Destillation in hochprozentigen Spiritus umgewandelt wird. Da der Rum nicht im
+                    Fass ausgebaut wird, handelt es
+                    sich um einen weissen Rum, der hauptsächlich zum Mixen eingesetzt wird.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Kanton Bern, Schweiz</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end langatunRumModal -->
 
       <!-- langatunModal -->
       <div class="modal fade" id="langatunModal" tabindex="-1" role="dialog" aria-labelledby="langatunModalLabel"
@@ -2820,6 +3562,47 @@
         </div>
       </div>
       <!-- end nobleModal -->
+      <!-- outerspaceModal -->
+      <div class="modal fade" id="outerspaceModal" tabindex="-1" role="dialog" aria-labelledby="outerspaceModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="outerspaceModalLabel">Outerspace Vodka</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/OuterspaceVodka.png" alt="Outerspace Vodka" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Vodkas gibt es in den ungewöhnlichsten Flaschenformen verpackt - Totenschädel, Kalaschnikows,
+                    Feuerlöscher, Schneekugeln,
+                    Flakons und und und. Ein Alien hat da gerade noch gefehlt!
+                    Für ein ausserirdisches Ambiente sorgt aber nicht nur das grünliche Behältnis mit den grossen
+                    Augenhöhlen, sondern auch die
+                    spezielle Filterung durch Meteoritengestein, das etwa vier Milliarden Jahre auf dem Buckel hat. Der
+                    Vodka besteht aus amerikanischen
+                    Mais und wird fünffach destilliert.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Vereinigte Staaten</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end outerspaceModal -->
 
       <!-- pimmsModal -->
       <div class="modal fade" id="pimmsModal" tabindex="-1" role="dialog" aria-labelledby="pimmsModalLabel"
@@ -2861,6 +3644,53 @@
         </div>
       </div>
       <!-- end pimmsModal -->
+      <!-- ricardModal -->
+      <div class="modal fade" id="ricardModal" tabindex="-1" role="dialog" aria-labelledby="ricardModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ricardModalLabel">Ricard Pastis</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/Ricard.png" alt="Ricard Pastis" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Ricard Pastis steht heute auf Platz drei der weltweit meistverkauften Spirituosen. Er wurde im Jahr
+                    1932 von Paul Ricard in Marseille
+                    als Antwort auf den Absinth-Bann entwickelt. Da die französische Elite eine neue Spirituose
+                    brauchte, wurden Anissamen, Süssholz
+                    und andere, bis heute geheimgehaltene Botanicals zweifach destilliert. Gerade in Südfrankreich sehr
+                    populär, wird er vor allen Dingen
+                    eiskalt serviert und mit Wasser vermischt. Dadurch fallen die sogenannten Terpene, die sich nicht
+                    nur in Anisspirituosen, sondern auch
+                    in Absinth finden, aus – diese sind in alkoholischen Lösungen mit einem Alkoholgehalt von mehr als
+                    30% löslich, fallen aber unter
+                    dieser Grenze als weisse-gelbe Wolken im Glas aus, welches zur Beliebtheit des Getränks beigetragen
+                    hat (es erinnerte schon etwas
+                    an Absinth). Heute gehört Ricard zur Pernod Ricard-Gruppe, einem der Marktführer des Wein- und
+                    Spirituosenvertriebs in Europa.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Marseille, Frankreich</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end ricardModal -->
 
       <!-- ramazzottiModal -->
       <div class="modal fade" id="ramazzottiModal" tabindex="-1" role="dialog" aria-labelledby="ramazzottiModalLabel"
@@ -2947,6 +3777,91 @@
         </div>
       </div>
       <!-- end rokuModal -->
+      <!-- cosmeModal -->
+      <div class="modal fade" id="cosmeModal" tabindex="-1" role="dialog" aria-labelledby="cosmeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="cosmeModalLabel">San Cosme Mezcal Blanco</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/SanCosme.png" alt="San Cosme Mezcal Blanco" class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Dieser Mezcal wird nach alten Traditionen in Mexiko hergestellt und zwar zu 100% aus der Agavenart
+                    Angustifolia Haw (Espadín).
+                    Dafür wird das Herzstück der Agaven herausgeschnitten und in einem Steinofen gebacken. Nach einer
+                    zweitägigen Fermentation
+                    mithilfe natürlicher Hefe folgt die zweifache Destillation in der kupfernen Pot Still-Anlage. Dieser
+                    Mezcal wird direkt nach der Filterung
+                    abgefüllt.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Oaxaca, Mexiko</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end cosmeModal -->
+      <!-- meteoroModal -->
+      <div class="modal fade" id="meteoroModal" tabindex="-1" role="dialog" aria-labelledby="meteoroModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="meteoroModalLabel">Mezcal Meteoro Joven Espadin</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-md-6 my-auto text-center">
+                  <img src="./modal-img/MezcalMeteoro.png" alt="Mezcal Meteoro Joven Espadin"
+                    class="img-fluid modal-img">
+                </div>
+                <div class="col-md-6 ml-auto">
+                  <p class="text-dark">
+                    Mezcal Meteoro wurde von einer Legende inspiriert, die von dem besten jemals hergestellten Mezcal
+                    handelt. Vor mehr als hundert
+                    Jahren, so erzählt man sich, schlug ein kleiner Meteorit in Mexiko ein, der einen Krater
+                    hinterliess. In diesem kochte ein gewiefter
+                    Mezcal-Meister seine Agavenherzen, denn der Ort bildete einen perfekten Erdofen. Und diese kommen im
+                    handwerklichen
+                    Herstellungsprozess von Mezcal nunmal zum Einsatz. Heute produziert Petronilo Rosario Altamirano aus
+                    Oaxaca ausschliesslich
+                    nach traditioneller Methode. Der seit 2014 erhältliche Mezcal Meteoro Joven Espadin besteht aus den
+                    im kleinbäuerlichen Stil
+                    kultivierten Espadín-Agaven, die üblicherweise für den Prozess herangezogen werden.
+                    <br /><br />
+                    <span class="light-text">Herkunft: <small>Oaxaca, Mexiko</small></span>
+                  </p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-info" data-dismiss="modal">Schliessen</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end meteoroModal -->
 
       <!-- zacapaModal -->
       <div class="modal fade" id="zacapaModal" tabindex="-1" role="dialog" aria-labelledby="zacapaModalLabel"
